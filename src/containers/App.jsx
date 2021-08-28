@@ -13,7 +13,7 @@ const App = () => (
     <Header />
     <Search />
 
-    <Categories title="Mi Lista">
+    <Categories title="Mas Vistos">
       <Carousel>
         <CarouselItem />
         <CarouselItem />
@@ -22,14 +22,14 @@ const App = () => (
       </Carousel>
     </Categories>
 
-    <Categories title="Tendencias">
+    <Categories title="Lo actual">
       <Carousel>
         <CarouselItem />
         <CarouselItem />
       </Carousel>
     </Categories>
 
-    <Categories title="Originales de Platzi Video">
+    <Categories title="Videos Recientes">
       <Carousel>
         <CarouselItem />
       </Carousel>
