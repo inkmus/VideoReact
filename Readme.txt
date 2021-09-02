@@ -1,0 +1,1 @@
+Se debetener activas dos ventanas de su consola, una corriendo la fake API npx json-server --watch initialState.json---,  y otra corriendo el proyecto de PlatziVideo npm run start para que puedan visualizar correctamente el llamado a la API
