@@ -7,11 +7,11 @@ import CarouselItem from '../components/CarouselItem'
 import Categories from '../components/Categories'
 import Footer from '../components/Footer'
 import useChannelMovie from '../hooks/useChannelMovie'
-import '../assets/styles/App.scss'
+import '../assets/styles/Home.scss'
 
 const API = 'http://localhost:3000/initalState'
 
-const App = () => {
+const Home = () => {
   const initialState = useChannelMovie(API)
   return initialState.length === 0 ? <h1>Loading...</h1> : (
     <Layout>
@@ -45,4 +45,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Home
