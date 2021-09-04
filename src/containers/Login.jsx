@@ -1,4 +1,5 @@
 import React from 'react'
+import '../assets/styles/components/Login.scss'
 
 const Login = ()=> (
     <section className='login'>
@@ -18,10 +19,10 @@ const Login = ()=> (
         </form>
         <section className='login__container--social-media'>
             <div>
-                <img src='../assets/google-icon.png' /> Inicia sesión con Google
+                <img src='../assets/static/google-icon.png' /> Inicia sesión con Google
             </div>
             <div>
-                <img src='../assets/twitter-icon.png' /> Inicia sesión con Twitter
+                <img src='../assets/static/twitter-icon' /> Inicia sesión con Twitter
             </div>
         </section>
         <p className='login__container--register'>
