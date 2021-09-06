@@ -1,5 +1,7 @@
 import React from 'react'
 import '../assets/styles/components/Login.scss'
+import googleIcon from '../assets/static/google-icon.png';
+import twitterIcon from '../assets/static/twitter-icon.png';
 
 const Login = ()=> (
     <section className='login'>
@@ -18,18 +20,24 @@ const Login = ()=> (
             </div>
         </form>
         <section className='login__container--social-media'>
-            <div>
-                <img src='../assets/static/google-icon.png' /> Inicia sesión con Google
+        <div>
+              <img src={googleIcon} alt="Google" />
+              {' '}
+              Inicia sesión con Google
             </div>
             <div>
-                <img src='../assets/static/twitter-icon' /> Inicia sesión con Twitter
+              <img src={twitterIcon} alt="Twitter" />
+              {' '}
+              Inicia sesión con Twitter
             </div>
         </section>
         <p className='login__container--register'>
             No tienes ninguna cuenta <a href=''>Regístrate</a>
         </p>
-    </section>
-</section>
-)
+        
+        </section>
+      </section>
+      );
+
 
 export default Login
