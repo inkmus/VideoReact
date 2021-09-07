@@ -1,6 +1,8 @@
 import React from 'react'
+import '../assets/styles/components/Register.scss'
 
 const Register = ()=> {
+	return (
     <section className='register'>
 		<section className='register__container'>
 			<h2>Regístrate</h2>
@@ -13,6 +15,7 @@ const Register = ()=> {
 			<a href=''>Iniciar sesión</a>
 		</section>
 	</section>
+	)
 }
 
 export default Register
