@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const NotFound = ()=> (
-<>
-<h1>Ups, no encontramos lo que buscas</h1>,
- <h2>Pos regresate al home </h2>
-</>
-)
+const NotFound = () => {
+	return (
+		<>
+			<h1>No encontrado</h1>
+			<h2>Regresa al Home</h2>
+		</>
+	);
+};
 
-export default NotFound
+export default NotFound;

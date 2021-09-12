@@ -1,51 +1,26 @@
 .carousel {
-  overflow: scroll;
-  padding-left: 30px;
-  width: 100%;
-
-  position: relative;
-}
-
-#scrool {
-  background-color: transparent;
-  overflow: scroll;
+	overflow: scroll;
+	padding-left: 30px;
+	width: 100%;
+	position: relative;
 }
 
 .carousel__container {
-  transition: 450ms -webkit-transform;
-  transition: 450ms transform;
-  transition: 450ms transform, 450ms -webkit-transform;
-  font-size: 0;
-  white-space: nowrap;
-  margin: 70px 0px;
-  padding-bottom: 10px;
+	transition: 450ms -webkit-transform;
+	transition: 450ms transform;
+	transition: 450ms transform, 450ms -webkit-transform;
+	font-size: 0;
+	white-space: nowrap;
+	margin: 70px 0px;
+	padding-bottom: 10px;
 }
 
 .carousel__container:hover .carousel-item {
-  opacity: 0.3;
+	opacity: 0.3;
 }
 
 .carousel__container:hover .carousel-item:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  opacity: 1;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	opacity: 1;
 }
-
-
-#scrool {
- display: none;
-  }
-
-
-
-  ::-webkit-scrollbar {width: 2px;height: 2px;} 
-  ::-webkit-scrollbar button {width: 0px;height: 0px;} 
-  ::-webkit-scrollbar-thumb {background:transparent;
-    border: 0px none transparent; border-radius: 50px;} 
-  ::-webkit-scrollbar-thumb:hover { background: transparent;} 
-  ::-webkit-scrollbar-thumb:active {background: transparent;}
-  ::-webkit-scrollbar-track {background: transparent; 
-    border: 0px none transparent;border-radius: 50px;}
-  ::-webkit-scrollbar-track:hover {background: transparent;}
-  ::-webkit scrollbar-track:active {background: transparent;}
-  ::-webkit-scrollbar-corner {background: transparent;}
