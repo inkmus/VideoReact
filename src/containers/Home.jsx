@@ -6,7 +6,7 @@ import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
 import '../assets/styles/App.scss';
 
-import useInitialState from '../hooks/useInitialState';
+
 
 
 

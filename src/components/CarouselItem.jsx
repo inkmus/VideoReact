@@ -1,20 +1,20 @@
-import React from 'react';
-import '../assets/styles/components/CarouselItem.scss';
+import React from 'react'
+import '../assets/styles/components/CarouselItem.scss'
 
 //icons
-import playIcon from '../assets/static/play-icon.png';
-import plusIcon from '../assets/static/plus-icon.png';
-import removeIcon from '../assets/static/remove-icon.png';
+import playIcon from '../assets/static/play-icon.png'
+import plusIcon from '../assets/static/plus-icon.png'
+import removeIcon from '../assets/static/remove-icon.png'
 
 //Data validation
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 //Redux
-import { connect } from 'react-redux';
-import { setFavorite, deleteFavorite } from '../actions';
+import { connect } from 'react-redux'
+import { setFavorite, deleteFavorite } from '../actions'
 
 const CarouselItem = (props) => {
-	const { id, cover, title, year, duration, contentRating, isList } = props;
+	const { id, cover, title, year, duration, contentRating, isList } = props
 	const handleSetFavorite = () => {
 		props.setFavorite({
 			id,
@@ -23,11 +23,11 @@ const CarouselItem = (props) => {
 			year,
 			duration,
 			contentRating,
-		});
-	};
+		})
+	}
 	const handleDeleteFavorite = (itemId) => {
-		props.deleteFavorite(itemId);
-	};
+		props.deleteFavorite(itemId)
+	}
 	return (
 		<div className='carousel-item'>
 			<img className='carousel-item__img' src={cover} alt={title} />
@@ -61,8 +61,8 @@ const CarouselItem = (props) => {
 				</p>
 			</div>
 		</div>
-	);
-};
+	)
+}
 
 CarouselItem.propTypes = {
 	cover: PropTypes.string,
@@ -70,13 +70,13 @@ CarouselItem.propTypes = {
 	year: PropTypes.number,
 	contentRating: PropTypes.string,
 	duration: PropTypes.number,
-};
+}
 
 // Redux
 const mapDispatchToProps = {
 	setFavorite,
 	deleteFavorite,
-};
+}
 
-// export default CarouselItem;
-export default connect(null, mapDispatchToProps)(CarouselItem);
+// export default CarouselItem
+export default connect(null, mapDispatchToProps)(CarouselItem)
